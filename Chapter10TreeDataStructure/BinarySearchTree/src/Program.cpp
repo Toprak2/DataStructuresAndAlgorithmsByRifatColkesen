@@ -12,6 +12,7 @@ int main(){
         cout<<"1)add element"<<endl;
         cout<<"2)inorder list"<<endl;
         cout<<"3)delete element"<<endl;
+        cout<<"4)find"<<endl;
         cin>>i;
 
         switch (i)
@@ -35,7 +36,14 @@ int main(){
             bstree->removeElement(data);
             break; 
         }
-            
+        case 4:
+        {
+            cout<<"enter the data you want to find: ";
+            int data;
+            cin>>data;
+            bstree->find(data);
+            break;
+        }
         default:
             break;
         }
