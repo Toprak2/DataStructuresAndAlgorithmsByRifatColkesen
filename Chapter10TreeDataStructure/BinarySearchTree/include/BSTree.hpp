@@ -7,6 +7,7 @@ class BSTree
 {
 private:
     Node *root;
+    void searchAndAdd(Node*&,int);
 public:
     BSTree();
     ~BSTree();
