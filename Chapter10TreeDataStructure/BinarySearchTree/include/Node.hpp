@@ -6,12 +6,13 @@
 class Node
 {
 private:
-    /* data */
-    int data;
+    
+public:
+int data;
     Node *left;
     Node *right;
-public:
-    Node(int);
+
+    Node(int data,Node *left=nullptr,Node *right=nullptr);
     ~Node();
 };
 
