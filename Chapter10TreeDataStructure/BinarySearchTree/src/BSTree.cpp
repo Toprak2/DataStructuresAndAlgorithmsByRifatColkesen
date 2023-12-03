@@ -23,6 +23,21 @@ void BSTree::searchAndAdd(Node *&subRoot,int data){
 
 }
 
+void BSTree::inorder(Node *subNode)
+{
+   if(subNode!=nullptr){
+      inorder(subNode->left);
+      cout<<subNode->data<<" ";
+      inorder(subNode->right);
+   }
+   ;
+}
+
 void BSTree::add(int data){
    searchAndAdd(root,data);
+}
+
+void BSTree::inorderList(){
+   inorder(root);
+   cout<<endl;
 }

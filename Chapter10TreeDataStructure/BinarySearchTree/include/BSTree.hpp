@@ -8,10 +8,12 @@ class BSTree
 private:
     Node *root;
     void searchAndAdd(Node*&,int);
+    void inorder(Node *);
 public:
     BSTree();
     ~BSTree();
     void add(int data);
+    void inorderList();    
 };
 
 
