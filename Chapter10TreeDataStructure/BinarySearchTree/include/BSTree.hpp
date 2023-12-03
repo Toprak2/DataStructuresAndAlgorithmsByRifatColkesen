@@ -10,13 +10,16 @@ private:
     void searchAndAdd(Node*&,int);
     bool searchAndDelete(Node *&,int);
     bool deleteNode(Node *&);
+    bool searchAndFind(Node *,int);
     void inorder(Node *);
 public:
     BSTree();
     ~BSTree();
     void add(int data);
     void removeElement(int);
-    void inorderList();    
+    void find(int); 
+    void inorderList();
+       
 };
 
 

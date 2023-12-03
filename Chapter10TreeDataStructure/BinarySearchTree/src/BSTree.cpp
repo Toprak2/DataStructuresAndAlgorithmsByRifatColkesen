@@ -57,6 +57,14 @@ bool BSTree::deleteNode(Node *&subNode)
    return true;
 }
 
+bool BSTree::searchAndFind(Node *subNode, int data)
+{
+    if(subNode==nullptr) return false;
+    else if(data == subNode->data) return true;
+    else if(data < subNode->data) return searchAndFind(subNode->left,data);
+    else return searchAndFind(subNode->right,data);
+}
+
 void BSTree::inorder(Node *subNode)
 {
    if(subNode!=nullptr){
@@ -74,6 +82,14 @@ void BSTree::add(int data){
 void BSTree::removeElement(int data)
 {
    searchAndDelete(root,data);
+}
+
+void BSTree::find(int data)
+{
+   if(searchAndFind(root,data))
+      cout<<"Data exists in the tree"<<endl;
+   else
+   cout<<"Data doesn't exist in tree"<<endl;
 }
 
 void BSTree::inorderList(){
