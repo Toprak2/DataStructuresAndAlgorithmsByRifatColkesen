@@ -3,15 +3,15 @@
 
 #include "Node.hpp"
 
-template<typename T>
 class BSTree
 {
 private:
+    Node *root;
 public:
     BSTree();
     ~BSTree();
+    void add(int data);
 };
-
 
 
 

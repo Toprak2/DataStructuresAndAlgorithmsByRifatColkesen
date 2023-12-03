@@ -3,16 +3,15 @@
 
 #include <iostream>
 
-template<typename T>
 class Node
 {
 private:
     /* data */
-    T data;
+    int data;
     Node *left;
     Node *right;
 public:
-    Node(T);
+    Node(int);
     ~Node();
 };
 

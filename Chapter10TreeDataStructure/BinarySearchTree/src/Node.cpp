@@ -1,7 +1,7 @@
 #include <Node.hpp>
 
-template <typename T>
-Node<T>::Node(T data){
+
+Node::Node(int data){
     this->data=data;
     this->left=NULL;
     this->right=NULL;
